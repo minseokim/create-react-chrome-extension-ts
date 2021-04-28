@@ -1,0 +1,462 @@
+html,
+body {
+  font-size: 16px;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Gilroy, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+    'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeSpeed;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  min-height: 100vh;
+  scroll-behavior: smooth;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+#__next {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('/fonts/Gilroy-SemiBoldItalic.woff2') format('woff2'),
+    url('/fonts/Gilroy-SemiBoldItalic.woff') format('woff'),
+    url('/fonts/Gilroy-SemiBoldItalic.ttf') format('truetype');
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('/fonts/Gilroy-ExtraBold.woff2') format('woff2'),
+    url('/fonts/Gilroy-ExtraBold.woff') format('woff'),
+    url('/fonts/Gilroy-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('/fonts/Gilroy-SemiBold.woff2') format('woff2'),
+    url('/fonts/Gilroy-SemiBold.woff') format('woff'),
+    url('/fonts/Gilroy-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('/fonts/Gilroy-Black.woff2') format('woff2'),
+    url('/fonts/Gilroy-Black.woff') format('woff'),
+    url('/fonts/Gilroy-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('/fonts/Gilroy-MediumItalic.woff2') format('woff2'),
+    url('/fonts/Gilroy-MediumItalic.woff') format('woff'),
+    url('/fonts/Gilroy-MediumItalic.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('/fonts/Gilroy-Light.woff2') format('woff2'),
+    url('/fonts/Gilroy-Light.woff') format('woff'),
+    url('/fonts/Gilroy-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('/fonts/Gilroy-BoldItalic.woff2') format('woff2'),
+    url('/fonts/Gilroy-BoldItalic.woff') format('woff'),
+    url('/fonts/Gilroy-BoldItalic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('/fonts/Gilroy-Bold.woff2') format('woff2'),
+    url('/fonts/Gilroy-Bold.woff') format('woff'),
+    url('/fonts/Gilroy-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: '/fonts/Gilroy-RegularItalic';
+  src: url('/fonts/Gilroy-RegularItalic.woff2') format('woff2'),
+    url('/fonts/Gilroy-RegularItalic.woff') format('woff'),
+    url('/fonts/Gilroy-RegularItalic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('/fonts/Gilroy-HeavyItalic.woff2') format('woff2'),
+    url('/fonts/Gilroy-HeavyItalic.woff') format('woff'),
+    url('/fonts/Gilroy-HeavyItalic.ttf') format('truetype');
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('/fonts/Gilroy-Thin.woff2') format('woff2'),
+    url('/fonts/Gilroy-Thin.woff') format('woff'),
+    url('/fonts/Gilroy-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('/fonts/Gilroy-UltraLightItalic.woff2') format('woff2'),
+    url('/fonts/Gilroy-UltraLightItalic.woff') format('woff'),
+    url('/fonts/Gilroy-UltraLightItalic.ttf') format('truetype');
+  font-weight: 200;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('/fonts/Gilroy-LightItalic.woff2') format('woff2'),
+    url('/fonts/Gilroy-LightItalic.woff') format('woff'),
+    url('/fonts/Gilroy-LightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('/fonts/Gilroy-Heavy.woff2') format('woff2'),
+    url('/fonts/Gilroy-Heavy.woff') format('woff'),
+    url('/fonts/Gilroy-Heavy.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('/fonts/Gilroy-Medium.woff2') format('woff2'),
+    url('/fonts/Gilroy-Medium.woff') format('woff'),
+    url('/fonts/Gilroy-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('/fonts/Gilroy-Regular.woff2') format('woff2'),
+    url('/fonts/Gilroy-Regular.woff') format('woff'),
+    url('/fonts/Gilroy-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('/fonts/Gilroy-ExtraBoldItalic.woff2') format('woff2'),
+    url('/fonts/Gilroy-ExtraBoldItalic.woff') format('woff'),
+    url('/fonts/Gilroy-ExtraBoldItalic.ttf') format('truetype');
+  font-weight: 800;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('/fonts/Gilroy-UltraLight.woff2') format('woff2'),
+    url('/fonts/Gilroy-UltraLight.woff') format('woff'),
+    url('/fonts/Gilroy-UltraLight.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('/fonts/Gilroy-BlackItalic.woff2') format('woff2'),
+    url('/fonts/Gilroy-BlackItalic.woff') format('woff'),
+    url('/fonts/Gilroy-BlackItalic.ttf') format('truetype');
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('/fonts/Gilroy-ThinItalic.woff2') format('woff2'),
+    url('/fonts/Gilroy-ThinItalic.woff') format('woff'),
+    url('/fonts/Gilroy-ThinItalic.ttf') format('truetype');
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'SourceCodePro';
+  src: url('/fonts/SourceCodePro-ExtraLight.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SourceCodePro';
+  src: url('/fonts/SourceCodePro-ExtraLightItalic.ttf') format('truetype');
+  font-weight: 200;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'SourceCodePro';
+  src: url('/fonts/SourceCodePro-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SourceCodePro';
+  src: url('/fonts/SourceCodePro-LightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'SourceCodePro';
+  src: url('/fonts/SourceCodePro-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SourceCodePro';
+  src: url('/fonts/SourceCodePro-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'SourceCodePro';
+  src: url('/fonts/SourceCodePro-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SourceCodePro';
+  src: url('/fonts/SourceCodePro-MediumItalic.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'SourceCodePro';
+  src: url('/fonts/SourceCodePro-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SourceCodePro';
+  src: url('/fonts/SourceCodePro-SemiBoldItalic.ttf') format('truetype');
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'SourceCodePro';
+  src: url('/fonts/SourceCodePro-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SourceCodePro';
+  src: url('/fonts/SourceCodePro-BoldItalic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'SourceCodePro';
+  src: url('/fonts/SourceCodePro-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SourceCodePro';
+  src: url('/fonts/SourceCodePro-BlackItalic.ttf') format('truetype');
+  font-weight: 900;
+  font-style: italic;
+}
+
+/* Reach UI Combobox CSS */
+:root {
+  --reach-combobox: 1;
+}
+[data-suggested-value] {
+  font-weight: bold;
+}
+
+/* Reach Tooltip CSS */
+:root {
+  --reach-tooltip: 1;
+}
+[data-reach-tooltip] {
+  z-index: 10000;
+  /* pointer-events: none; */
+  position: absolute;
+}
+
+/* Reach Dialog */
+:root {
+  --reach-dialog: 1;
+}
+
+/* Reach UI Listbox CSS */
+/* TODO(johnrjj) Trim this up */
+:root {
+  --reach-listbox: 1;
+}
+
+[data-reach-listbox-popover] {
+  display: block;
+  position: absolute;
+  min-width: -moz-fit-content;
+  min-width: -webkit-min-content;
+  min-width: min-content;
+  /* padding: 0.25rem 0; */
+  /* background: hsl(0, 0%, 100%); */
+  outline: none;
+  /* border: solid 1px hsla(0, 0%, 0%, 0.25); */
+}
+
+/* [data-reach-listbox-popover]:focus-within {
+  box-shadow: 0 0 4px Highlight;
+  outline: -webkit-focus-ring-color auto 4px;
+} */
+
+[data-reach-listbox-popover][hidden] {
+  display: none;
+}
+
+[data-reach-listbox-list] {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+[data-reach-listbox-list]:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+[data-reach-listbox-arrow] {
+  margin-left: 0.5rem;
+  display: block;
+  font-size: 0.5em;
+}
+
+[data-reach-listbox-group-label] {
+  display: block;
+  display: block;
+  margin: 0;
+  padding: 0.25rem 0.5rem;
+  white-space: nowrap;
+  user-select: none;
+  font-weight: bolder;
+}
+
+@keyframes flash {
+  0% {
+    background: hsla(211, 81%, 36%, 1);
+    color: hsl(0, 0%, 100%);
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+    background: inherit;
+    color: inherit;
+  }
+  100% {
+    background: hsla(211, 81%, 36%, 1);
+    color: hsl(0, 0%, 100%);
+    opacity: 1;
+  }
+}
+
+/* Reach UI Checkbox */
+:root {
+  --reach-checkbox: 1;
+}
+
+[data-reach-custom-checkbox-container] {
+  display: inline-block;
+  position: relative;
+  margin-right: 0.75ex;
+  cursor: default;
+  width: 0.875rem;
+  height: 0.875rem;
+}
+
+[data-reach-custom-checkbox-container]:focus-within,
+[data-reach-custom-checkbox-container][data-focus] {
+  /* box-shadow: 0 0 4px 1px Highlight; */
+  outline: none;
+  /* outline: -webkit-focus-ring-color auto 4px; */
+}
+
+[data-reach-custom-checkbox-input] {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  opacity: 0 !important;
+  z-index: 1 !important;
+  cursor: inherit;
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+/* Reach Tabs */
+:root {
+  --reach-tabs: 1;
+}
+
+[data-reach-tabs][data-orientation='vertical'] {
+  display: flex;
+}
+
+[data-reach-tab-list] {
+  display: flex;
+  /* background: hsla(0, 0%, 0%, 0.05); */
+}
+
+[data-reach-tab-list][aria-orientation='vertical'] {
+  flex-direction: column;
+}
